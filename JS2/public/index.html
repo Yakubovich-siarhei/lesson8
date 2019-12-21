@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id = "weather">
+    
+  </div>
+
+  <header>
+    <section class="top1">
+        <div class="new_route">
+            <h1>Минск <i class="fas fa-arrows-alt-h"></i> Москва</h1>
+            <p>7 &nbsp;&mdash; 31 декабря</p>
+        </div>
+    </section>
+
+    <section class="top2">
+        <nav>
+            <a href="#">Главное табло</a>
+        </nav>
+        <div class="add_route">
+            <div>
+                <table>
+                    <tr><select id="select"  name="select" aria-required="true">
+                            <option selected disabled value="">Выберите транспорт</option>
+                            <option value="автобус" class="t8">автобус</option>
+                            <option value="поезд" class="t8">поезд</option>
+                            <option value="такси" class="t8">такси</option>
+                        </select></tr>
+                    <tr><td><input type="text" placeholder=""  id="t1" value="Минск"></td></tr>
+                    <tr><td><input type="text" placeholder="" id="t5" value="Москва"></td></tr>
+                    <tr><td><form name="myform" >
+                            Дата отправления:  <input id="mydate">
+                        </form></td></tr>
+                    <tr><td>Дата прибытия: <input type="date"  id="t3" value="2019-12-31"></td></tr>                    
+                    <tr><td><input type="number" step="0.10" min="0" placeholder="0,00" id="t6"> ₽</td></tr>
+                                           
+                </table>
+                <button type="button" id="buttonTable">+ Добавить новый путь</button>
+              </div>                
+        </div>
+
+    </section>
+</header>
+
+<section>
+    <table id="myTable" cellspacing="0" class ="demotable">
+        <tbody>
+        </tbody>
+    </table>
+
+    <div>
+      <span class="weather__city"></span>
+      <span class="weather__forecast"></span>
+      <span class="weather__desc"></span>
+      <span class="weather__desc2"></span>
+      <span class="weather__icon"></span>
+    </div>
+    <button type="button" id="weatherButton">погода</button>
+</section>
+
+<div id="wrap">
+    <div id="table"></div>
+</div>
+<script src="../bundle.js"></script>
+</body>
+</html>
+
+
+
